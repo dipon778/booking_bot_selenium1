@@ -24,5 +24,8 @@ class Booking(webdriver.Chrome):
         currency_element = self.find_element(By.CSS_SELECTOR, "div.bui-group__item:nth-child(1) > button:nth-child(1)")
         print("this line is executing")
         currency_element.click()
-        currency_select = self.find_element(By.CSS_SELECTOR, 'div.bui-group__item:nth-child(13) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)')
+        # currency_select = self.find_element(By.CSS_SELECTOR,
+        #                                     'div.bui-group__item:nth-child(13) > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)')
+        currency_select = self.find_element(By.CSS_SELECTOR,
+                                            f'a[data-modal-header-async-url-param*="selected_currency={currency}"]')
         currency_select.click()
