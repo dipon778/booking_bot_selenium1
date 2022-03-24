@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="889a5398-84b3-4489-9657-beae829a35d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/booking/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking/constant.py" afterDir="false" />
+    <list default="true" id="889a5398-84b3-4489-9657-beae829a35d5" name="Changes" comment="changing currency to any via parameter">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booking/booking.py" beforeDir="false" afterPath="$PROJECT_DIR$/booking/booking.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
@@ -31,6 +30,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../1st_selenium" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -69,6 +69,36 @@
       <option name="presentableId" value="Default" />
       <updated>1648090258785</updated>
     </task>
+    <task id="LOCAL-00001" summary="changing currency to any via parameter">
+      <created>1648098699989</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648098699989</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changing currency to any via parameter">
+      <created>1648098707726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648098707726</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changing currency to any via parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing currency to any via parameter" />
   </component>
 </project>

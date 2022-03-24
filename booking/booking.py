@@ -29,3 +29,43 @@ class Booking(webdriver.Chrome):
         currency_select = self.find_element(By.CSS_SELECTOR,
                                             f'a[data-modal-header-async-url-param*="selected_currency={currency}"]')
         currency_select.click()
+
+    def select_place(self, place=None):
+        place_element = self.find_element(By.ID, 'ss')
+        place_element.clear()
+        place_element.send_keys(place)
+        first_result = self.find_element(By.CSS_SELECTOR, 'li[data-i="0"]')
+        first_result.click()
+
+    def select_dates(self, ch_in, ch_out):
+        ch_in_element = self.find_element(By.CSS_SELECTOR, f'td[data-date="{ch_in}"]')
+        ch_in_element.click()
+        ch_out_element = self.find_element(By.CSS_SELECTOR, f'td[data-date="{ch_out}"]')
+        ch_out_element.click()
+
+    def select_adults(self, adults=1):
+        selection_of_adult_count = self.find_element(By.ID, 'xp__guests__toggle')
+        selection_of_adult_count.click()
+
+        decrease_adult_element = self.find_element(By.CSS_SELECTOR,
+                                                   'div.sb-group__field:nth-child(1) > div:nth-child(1) > div:nth-child(2) > button:nth-child(2)')
+
+        increase_adults_elements = self.find_element(By.CSS_SELECTOR,
+                                                     '#xp__guests__inputs-container > div > div > div.sb-group__field.sb-group__field-adults > div > div.bui-stepper__wrapper.sb-group__stepper-a11y > button.bui-button.bui-button--secondary.bui-stepper__add-button')
+
+        # Collecting the number of adults value
+        number_of_adults = self.find_element(By.ID, 'group_adults')
+        print(number_of_adults.get_attribute("value"))
+
+        while True:
+            decrease_adult_element.click()
+            if( int(number_of_adults.get_attribute("value")) == 1):
+                break
+
+        for i in range(adults - 1):
+            increase_adults_elements.click()
+
+    def click_search(self):
+        place_search = self.find_element(By.XPATH, '/html/body/div[1]/div[2]/div/form/div[1]/div[4]/div[2]/button')
+        place_search.click()
+
